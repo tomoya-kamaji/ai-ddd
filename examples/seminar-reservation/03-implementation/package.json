@@ -1,0 +1,14 @@
+{
+  "name": "seminar-reservation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "neverthrow": "^8.2.0"
+  }
+}

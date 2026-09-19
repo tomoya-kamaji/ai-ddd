@@ -1,0 +1,1283 @@
+<mxfile host="Electron" agent="Claude">
+  <diagram name="レーティングシステム" id="class-rating-system">
+    <mxGraphModel dx="2934" dy="1777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="8800" math="0" shadow="0" darkMode="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=22;" value="クラス別レーティング" vertex="1">
+          <mxGeometry height="36" width="520" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="page-sub" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontColor=#666666;" value="対局盤・MP・グループは持たない。増減は相手との差。右側の枠はコメント用。" vertex="1">
+          <mxGeometry height="24" width="900" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=18;" value="ユビキタス言語" vertex="1">
+          <mxGeometry height="32" width="320" x="80" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="g-ul" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="語彙表" vertex="1">
+          <mxGeometry height="1752" width="2040" x="80" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted" parent="g-ul" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;columnLines=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;html=1;" value="" vertex="1">
+          <mxGeometry height="588" width="1960" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r0" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r0-c0" parent="ul-table-adopted-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="日本語" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r0-c1" parent="ul-table-adopted-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="英語" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r0-c2" parent="ul-table-adopted-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="種別" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r0-c3" parent="ul-table-adopted-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r0-c4" parent="ul-table-adopted-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="定義" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r1" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r1-c0" parent="ul-table-adopted-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="プレイヤー" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r1-c1" parent="ul-table-adopted-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Player" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r1-c2" parent="ul-table-adopted-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="アクター" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r1-c3" parent="ul-table-adopted-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r1-c4" parent="ul-table-adopted-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="クラスごとのレーティングを持つ人" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r2" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r2-c0" parent="ul-table-adopted-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="クラス" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r2-c1" parent="ul-table-adopted-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Craft" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r2-c2" parent="ul-table-adopted-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="値" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r2-c3" parent="ul-table-adopted-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r2-c4" parent="ul-table-adopted-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="レーティングの分割単位。値は下表" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r3" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r3-c0" parent="ul-table-adopted-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="レーティング" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r3-c1" parent="ul-table-adopted-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Rating" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r3-c2" parent="ul-table-adopted-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="エンティティ" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r3-c3" parent="ul-table-adopted-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r3-c4" parent="ul-table-adopted-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="1プレイヤー × 1クラスの数値。未開始か、1600で始まる" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r4" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r4-c0" parent="ul-table-adopted-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="未開始" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r4-c1" parent="ul-table-adopted-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="NotStarted" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r4-c2" parent="ul-table-adopted-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="状態" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r4-c3" parent="ul-table-adopted-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r4-c4" parent="ul-table-adopted-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="そのクラスのレーティングがまだない" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r5" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r5-c0" parent="ul-table-adopted-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="対局" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r5-c1" parent="ul-table-adopted-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Match" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r5-c2" parent="ul-table-adopted-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="エンティティ" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r5-c3" parent="ul-table-adopted-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r5-c4" parent="ul-table-adopted-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="同じクラスの2人の勝負。勝者・敗者が決まる" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r6" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r6-c0" parent="ul-table-adopted-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="勝者" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r6-c1" parent="ul-table-adopted-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Winner" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r6-c2" parent="ul-table-adopted-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="値" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r6-c3" parent="ul-table-adopted-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r6-c4" parent="ul-table-adopted-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="対局に勝ったプレイヤー" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r7" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r7-c0" parent="ul-table-adopted-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="敗者" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r7-c1" parent="ul-table-adopted-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Loser" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r7-c2" parent="ul-table-adopted-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="値" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r7-c3" parent="ul-table-adopted-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r7-c4" parent="ul-table-adopted-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="対局に負けたプレイヤー" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r8" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r8-c0" parent="ul-table-adopted-r8" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="集計" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r8-c1" parent="ul-table-adopted-r8" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Record" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r8-c2" parent="ul-table-adopted-r8" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="行為" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r8-c3" parent="ul-table-adopted-r8" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r8-c4" parent="ul-table-adopted-r8" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="対局を両者のレーティングへ一度だけ反映すること" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r9" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r9-c0" parent="ul-table-adopted-r9" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="対戦履歴" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r9-c1" parent="ul-table-adopted-r9" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="MatchHistory" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r9-c2" parent="ul-table-adopted-r9" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="エンティティ" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r9-c3" parent="ul-table-adopted-r9" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r9-c4" parent="ul-table-adopted-r9" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="集計済み対局の一覧" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r10" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r10-c0" parent="ul-table-adopted-r10" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="肩書き" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r10-c1" parent="ul-table-adopted-r10" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Grade" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r10-c2" parent="ul-table-adopted-r10" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="値" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r10-c3" parent="ul-table-adopted-r10" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r10-c4" parent="ul-table-adopted-r10" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="なし / EPIC / ULTIMATE / LEGEND / BEYOND" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r11" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="462" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r11-c0" parent="ul-table-adopted-r11" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="順位" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r11-c1" parent="ul-table-adopted-r11" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Rank" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r11-c2" parent="ul-table-adopted-r11" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="値" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r11-c3" parent="ul-table-adopted-r11" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r11-c4" parent="ul-table-adopted-r11" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="そのクラスのレーティング順。BEYOND判定に使う" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r12" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r12-c0" parent="ul-table-adopted-r12" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="シーズン" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r12-c1" parent="ul-table-adopted-r12" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Season" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r12-c2" parent="ul-table-adopted-r12" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="エンティティ" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r12-c3" parent="ul-table-adopted-r12" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r12-c4" parent="ul-table-adopted-r12" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="全レーティングを帯ごとに寄せる期間。識別子と表示名を持つ" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r13" parent="ul-table-adopted" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="546" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-adopted-r13-c0" parent="ul-table-adopted-r13" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="運営者" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r13-c1" parent="ul-table-adopted-r13" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Operator" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r13-c2" parent="ul-table-adopted-r13" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="アクター" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r13-c3" parent="ul-table-adopted-r13" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-adopted-r13-c4" parent="ul-table-adopted-r13" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="シーズンを更新できる人" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-craft-title" parent="g-ul" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;" value="Craft の値（この7つのみ。対局の craft は1つ）" vertex="1">
+          <mxGeometry height="28" width="700" x="40" y="678" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft" parent="g-ul" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;columnLines=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;html=1;" value="" vertex="1">
+          <mxGeometry height="336" width="1960" x="40" y="714" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r0" parent="ul-table-craft" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r0-c0" parent="ul-table-craft-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="日本語" vertex="1">
+          <mxGeometry height="42" width="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r0-c1" parent="ul-table-craft-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="英語" vertex="1">
+          <mxGeometry height="42" width="320" x="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r0-c2" parent="ul-table-craft-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="公式英語（使わない）" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r1" parent="ul-table-craft" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r1-c0" parent="ul-table-craft-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="エルフ" vertex="1">
+          <mxGeometry height="42" width="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r1-c1" parent="ul-table-craft-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Elf" vertex="1">
+          <mxGeometry height="42" width="320" x="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r1-c2" parent="ul-table-craft-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Forestcraft" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r2" parent="ul-table-craft" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r2-c0" parent="ul-table-craft-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="ロイヤル" vertex="1">
+          <mxGeometry height="42" width="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r2-c1" parent="ul-table-craft-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Royal" vertex="1">
+          <mxGeometry height="42" width="320" x="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r2-c2" parent="ul-table-craft-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Swordcraft" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r3" parent="ul-table-craft" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r3-c0" parent="ul-table-craft-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="ウィッチ" vertex="1">
+          <mxGeometry height="42" width="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r3-c1" parent="ul-table-craft-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Witch" vertex="1">
+          <mxGeometry height="42" width="320" x="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r3-c2" parent="ul-table-craft-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Runecraft" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r4" parent="ul-table-craft" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r4-c0" parent="ul-table-craft-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="ドラゴン" vertex="1">
+          <mxGeometry height="42" width="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r4-c1" parent="ul-table-craft-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Dragon" vertex="1">
+          <mxGeometry height="42" width="320" x="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r4-c2" parent="ul-table-craft-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Dragoncraft" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r5" parent="ul-table-craft" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r5-c0" parent="ul-table-craft-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="ナイトメア" vertex="1">
+          <mxGeometry height="42" width="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r5-c1" parent="ul-table-craft-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Nightmare" vertex="1">
+          <mxGeometry height="42" width="320" x="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r5-c2" parent="ul-table-craft-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Abysscraft" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r6" parent="ul-table-craft" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r6-c0" parent="ul-table-craft-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="ビショップ" vertex="1">
+          <mxGeometry height="42" width="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r6-c1" parent="ul-table-craft-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Bishop" vertex="1">
+          <mxGeometry height="42" width="320" x="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r6-c2" parent="ul-table-craft-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Havencraft" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r7" parent="ul-table-craft" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-craft-r7-c0" parent="ul-table-craft-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="ネメシス" vertex="1">
+          <mxGeometry height="42" width="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r7-c1" parent="ul-table-craft-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Nemesis" vertex="1">
+          <mxGeometry height="42" width="320" x="320" as="geometry">
+            <mxRectangle height="42" width="320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-craft-r7-c2" parent="ul-table-craft-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#ffffff;align=left;verticalAlign=middle;spacingLeft=8;" value="Portalcraft" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-unused-title" parent="g-ul" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=13;" value="使わない語" vertex="1">
+          <mxGeometry height="28" width="240" x="40" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused" parent="g-ul" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;columnLines=1;strokeColor=#6c8ebf;fillColor=#ffffff;align=left;html=1;" value="" vertex="1">
+          <mxGeometry height="336" width="1960" x="40" y="1126" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r0" parent="ul-table-unused" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r0-c0" parent="ul-table-unused-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="日本語" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r0-c1" parent="ul-table-unused-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="英語" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r0-c2" parent="ul-table-unused-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="種別" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r0-c3" parent="ul-table-unused-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="採用" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r0-c4" parent="ul-table-unused-r0" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=8;fontStyle=1;" value="定義" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r1" parent="ul-table-unused" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r1-c0" parent="ul-table-unused-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="Class" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r1-c1" parent="ul-table-unused-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="—" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r1-c2" parent="ul-table-unused-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r1-c3" parent="ul-table-unused-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r1-c4" parent="ul-table-unused-r1" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="クラスの英語にしない。Craft を使う" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r2" parent="ul-table-unused" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r2-c0" parent="ul-table-unused-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="グループ" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r2-c1" parent="ul-table-unused-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="Group" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r2-c2" parent="ul-table-unused-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r2-c3" parent="ul-table-unused-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r2-c4" parent="ul-table-unused-r2" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="初期CRの差も、昇降格も持たない" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r3" parent="ul-table-unused" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="126" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r3-c0" parent="ul-table-unused-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="MP" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r3-c1" parent="ul-table-unused-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="—" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r3-c2" parent="ul-table-unused-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r3-c3" parent="ul-table-unused-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r3-c4" parent="ul-table-unused-r3" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="ランクポイントは対象外" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r4" parent="ul-table-unused" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r4-c0" parent="ul-table-unused-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="マッチング" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r4-c1" parent="ul-table-unused-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="Matching" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r4-c2" parent="ul-table-unused-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r4-c3" parent="ul-table-unused-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r4-c4" parent="ul-table-unused-r4" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="対戦相手の探索は対象外" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r5" parent="ul-table-unused" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r5-c0" parent="ul-table-unused-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="Elo" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r5-c1" parent="ul-table-unused-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="—" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r5-c2" parent="ul-table-unused-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r5-c3" parent="ul-table-unused-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r5-c4" parent="ul-table-unused-r5" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="増減の中身。会話では「相手との差で増減する」" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r6" parent="ul-table-unused" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r6-c0" parent="ul-table-unused-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="CR" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r6-c1" parent="ul-table-unused-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="—" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r6-c2" parent="ul-table-unused-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r6-c3" parent="ul-table-unused-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r6-c4" parent="ul-table-unused-r6" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="略語。正式名称はレーティング" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r7" parent="ul-table-unused" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="42" width="1960" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="ul-table-unused-r7-c0" parent="ul-table-unused-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="ニュートラル" vertex="1">
+          <mxGeometry height="42" width="180" as="geometry">
+            <mxRectangle height="42" width="180" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r7-c1" parent="ul-table-unused-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="Neutral" vertex="1">
+          <mxGeometry height="42" width="200" x="180" as="geometry">
+            <mxRectangle height="42" width="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r7-c2" parent="ul-table-unused-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="140" x="380" as="geometry">
+            <mxRectangle height="42" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r7-c3" parent="ul-table-unused-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="使わない" vertex="1">
+          <mxGeometry height="42" width="120" x="520" as="geometry">
+            <mxRectangle height="42" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-table-unused-r7-c4" parent="ul-table-unused-r7" style="shape=tableCell;startSize=0;whiteSpace=wrap;html=1;strokeColor=inherit;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=8;" value="共通カード枠。レーティングのクラスではない" vertex="1">
+          <mxGeometry height="42" width="1320" x="640" as="geometry">
+            <mxRectangle height="42" width="1320" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ul-space" parent="g-ul" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;fillColor=none;strokeColor=#dddddd;" value="" vertex="1">
+          <mxGeometry height="180" width="1960" x="40" y="1502" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ul" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="1752" width="720" x="2200" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=18;" value="ユースケース図" vertex="1">
+          <mxGeometry height="32" width="320" x="80" y="2082" as="geometry" />
+        </mxCell>
+        <mxCell id="g-uc" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#000000;" value="対象スコープ: クラス別レーティング" vertex="1">
+          <mxGeometry height="900" width="2040" x="80" y="2132" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-player" parent="g-uc" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" value="プレイヤー" vertex="1">
+          <mxGeometry height="100" width="60" x="80" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-operator" parent="g-uc" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#ffffff;strokeColor=#000000;" value="運営者" vertex="1">
+          <mxGeometry height="100" width="60" x="80" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" parent="g-uc" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="クラスのレートを開始する" vertex="1">
+          <mxGeometry height="100" width="360" x="280" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" parent="g-uc" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="対局結果を記録する" vertex="1">
+          <mxGeometry height="100" width="360" x="280" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" parent="g-uc" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="ランキングを見る" vertex="1">
+          <mxGeometry height="100" width="360" x="280" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" parent="g-uc" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="シーズンを更新する" vertex="1">
+          <mxGeometry height="100" width="360" x="280" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc1" edge="1" parent="g-uc" source="actor-player" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=none;startArrow=none;exitX=1;exitY=0.15;entryX=0;entryY=0.5;" target="uc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc2" edge="1" parent="g-uc" source="actor-player" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=none;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="uc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc3" edge="1" parent="g-uc" source="actor-player" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=none;startArrow=none;exitX=1;exitY=0.85;entryX=0;entryY=0.5;" target="uc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-o-uc4" edge="1" parent="g-uc" source="actor-operator" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=none;startArrow=none;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="uc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g-uc-out" parent="g-uc" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;" value="対象外" vertex="1">
+          <mxGeometry height="520" width="520" x="860" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" parent="g-uc-out" style="ellipse;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;" value="マッチングする" vertex="1">
+          <mxGeometry height="90" width="360" x="80" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6" parent="g-uc-out" style="ellipse;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;" value="MPを加算する" vertex="1">
+          <mxGeometry height="90" width="360" x="80" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7" parent="g-uc-out" style="ellipse;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;" value="グループを昇降格する" vertex="1">
+          <mxGeometry height="90" width="360" x="80" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-note" parent="g-uc" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="対象: 開始・対局集計・参照・シーズン寄せ&#xa;対象外: 対戦相手の探索、ランクポイント、グループ戦績&#xa;&#xa;ルールは R1〜R6 だけをシナリオの例外・事後条件に落とす。" vertex="1">
+          <mxGeometry height="200" width="520" x="860" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="uc-space" parent="g-uc" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 4;fillColor=none;strokeColor=#dddddd;" value="" vertex="1">
+          <mxGeometry height="760" width="500" x="1480" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c-uc" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="900" width="720" x="2200" y="2132" as="geometry" />
+        </mxCell>
+        <mxCell id="ob-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=18;" value="オブジェクト図" vertex="1">
+          <mxGeometry height="32" width="320" x="80" y="3172" as="geometry" />
+        </mxCell>
+        <mxCell id="g-ob1" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="ケース1: エルフのレートを開始する（基本フロー）" vertex="1">
+          <mxGeometry height="420" width="2040" x="80" y="3222" as="geometry" />
+        </mxCell>
+        <mxCell id="ob1-r" parent="g-ob1" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating : Rating&#xa;playerId = P001&#xa;craft = エルフ&#xa;value = 1600&#xa;grade = なし" vertex="1">
+          <mxGeometry height="160" width="280" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ob1-n1" parent="g-ob1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="開始直後のレーティングは 1600。&#xa;1649以下なので肩書きはなし" vertex="1">
+          <mxGeometry height="120" width="400" x="460" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ob1-n2" parent="g-ob1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="同じ P001 のウィッチは未開始。&#xa;レートはクラスごとに分かれる" vertex="1">
+          <mxGeometry height="120" width="400" x="810" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob1-n1" edge="1" parent="g-ob1" source="ob1-r" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" target="ob1-n1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob1-n2" edge="1" parent="g-ob1" source="ob1-r" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.65;entryX=0;entryY=0.5;" target="ob1-n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ob1" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="420" width="720" x="2200" y="3222" as="geometry" />
+        </mxCell>
+        <mxCell id="g-ob2" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="ケース2: 開始済みクラスを再度開始する（例外）" vertex="1">
+          <mxGeometry height="420" width="2040" x="80" y="3762" as="geometry" />
+        </mxCell>
+        <mxCell id="ob2-r" parent="g-ob2" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating : Rating&#xa;playerId = P001&#xa;craft = エルフ&#xa;value = 1600" vertex="1">
+          <mxGeometry height="140" width="280" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ob2-n" parent="g-ob2" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="P001 がエルフを再度開始しようとする。&#xa;すでにレーティングがあるため開始しない" vertex="1">
+          <mxGeometry height="120" width="440" x="460" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob2-n" edge="1" parent="g-ob2" source="ob2-r" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ob2-n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ob2" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="420" width="720" x="2200" y="3762" as="geometry" />
+        </mxCell>
+        <mxCell id="g-ob3" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="ケース3: 同レート対局を集計する（基本フロー）  両者1640。勝ち +16 / 負け -16" vertex="1">
+          <mxGeometry height="480" width="2040" x="80" y="4302" as="geometry" />
+        </mxCell>
+        <mxCell id="ob3-h" parent="g-ob3" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="matchHistory : MatchHistory&#xa;matches = [M001]" vertex="1">
+          <mxGeometry height="90" width="300" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ob3-m" parent="g-ob3" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="match : Match&#xa;id = M001&#xa;craft = エルフ&#xa;winnerId = P001&#xa;loserId = P002&#xa;recorded = 集計済み" vertex="1">
+          <mxGeometry height="180" width="280" x="480" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ob3-rw" parent="g-ob3" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating : Rating&#xa;playerId = P001&#xa;craft = エルフ&#xa;value = 1656&#xa;grade = EPIC" vertex="1">
+          <mxGeometry height="160" width="280" x="910" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ob3-rl" parent="g-ob3" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating : Rating&#xa;playerId = P002&#xa;craft = エルフ&#xa;value = 1624&#xa;grade = なし" vertex="1">
+          <mxGeometry height="160" width="280" x="1280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ob3-n4" parent="g-ob3" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="両者のレーティングを同時に更新する。&#xa;片方だけ動かす操作はない" vertex="1">
+          <mxGeometry height="110" width="400" x="480" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ob3-n5" parent="g-ob3" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="P001 は 1656 なので肩書きは EPIC。&#xa;P002 は 1624 なのでなし" vertex="1">
+          <mxGeometry height="110" width="400" x="940" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob3-hm" edge="1" parent="g-ob3" source="ob3-h" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.3;" target="ob3-m" value="含む">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob3-mw" edge="1" parent="g-ob3" source="ob3-m" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" target="ob3-rw" value="勝者">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob3-ml" edge="1" parent="g-ob3" source="ob3-m" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;exitX=1;exitY=0.7;entryX=0;entryY=0.5;" target="ob3-rl" value="敗者">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob3-n4" edge="1" parent="g-ob3" source="ob3-m" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="ob3-n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob3-n5" edge="1" parent="g-ob3" source="ob3-rw" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.3;entryY=0;" target="ob3-n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ob3" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="480" width="720" x="2200" y="4302" as="geometry" />
+        </mxCell>
+        <mxCell id="g-ob4" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="ケース4: 同じ対局を再集計する（例外）" vertex="1">
+          <mxGeometry height="420" width="2040" x="80" y="4902" as="geometry" />
+        </mxCell>
+        <mxCell id="ob4-h" parent="g-ob4" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="matchHistory : MatchHistory&#xa;matches = [M001]" vertex="1">
+          <mxGeometry height="90" width="300" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ob4-m" parent="g-ob4" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="match : Match&#xa;id = M001&#xa;recorded = 集計済み" vertex="1">
+          <mxGeometry height="120" width="280" x="510" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="ob4-n" parent="g-ob4" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="M001 は履歴にある。&#xa;同じ対局は一度だけ集計する" vertex="1">
+          <mxGeometry height="120" width="400" x="840" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob4-hm" edge="1" parent="g-ob4" source="ob4-h" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ob4-m" value="含む">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob4-n" edge="1" parent="g-ob4" source="ob4-h" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="ob4-n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ob4" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="420" width="720" x="2200" y="4902" as="geometry" />
+        </mxCell>
+        <mxCell id="g-ob5" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="ケース5: 未開始クラスの対局（例外）" vertex="1">
+          <mxGeometry height="420" width="2040" x="80" y="5442" as="geometry" />
+        </mxCell>
+        <mxCell id="ob5-r" parent="g-ob5" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating : Rating&#xa;playerId = P001&#xa;craft = エルフ&#xa;value = 1656" vertex="1">
+          <mxGeometry height="140" width="280" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ob5-m" parent="g-ob5" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="match : Match&#xa;id = M002&#xa;craft = ウィッチ&#xa;winnerId = P001&#xa;loserId = P003&#xa;recorded = 未集計" vertex="1">
+          <mxGeometry height="180" width="280" x="500" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="ob5-n" parent="g-ob5" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="P001 のウィッチは未開始。&#xa;未開始のクラスでは集計しない" vertex="1">
+          <mxGeometry height="120" width="400" x="940" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob5-rn" edge="1" parent="g-ob5" source="ob5-r" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.35;entryX=0;entryY=0.35;" target="ob5-n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob5-mn" edge="1" parent="g-ob5" source="ob5-m" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.65;" target="ob5-n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ob5" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="420" width="720" x="2200" y="5442" as="geometry" />
+        </mxCell>
+        <mxCell id="g-ob6" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="ケース6: ランキングと BEYOND" vertex="1">
+          <mxGeometry height="420" width="2040" x="80" y="5982" as="geometry" />
+        </mxCell>
+        <mxCell id="ob6-a" parent="g-ob6" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating&#xa;P010 / エルフ / 1860&#xa;rank = 1&#xa;grade = BEYOND" vertex="1">
+          <mxGeometry height="150" width="280" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ob6-b" parent="g-ob6" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating&#xa;P011 / エルフ / 1855&#xa;rank = 101&#xa;grade = LEGEND" vertex="1">
+          <mxGeometry height="150" width="280" x="430" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="ob6-c" parent="g-ob6" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating&#xa;P012 / エルフ / 1640&#xa;rank = 200&#xa;grade = なし" vertex="1">
+          <mxGeometry height="150" width="280" x="920" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="ob6-n" parent="g-ob6" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="1850以上かつ上位100が BEYOND。&#xa;1855 でも 101 位なら LEGEND" vertex="1">
+          <mxGeometry height="130" width="420" x="1220" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob6-an" edge="1" parent="g-ob6" source="ob6-a" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.4;entryX=0;entryY=0.35;" target="ob6-n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob6-bn" edge="1" parent="g-ob6" source="ob6-b" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.5;entryX=0;entryY=0.65;" target="ob6-n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ob6" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="420" width="720" x="2200" y="5982" as="geometry" />
+        </mxCell>
+        <mxCell id="g-ob7" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="ケース7: シーズンを寄せる" vertex="1">
+          <mxGeometry height="420" width="2040" x="80" y="6522" as="geometry" />
+        </mxCell>
+        <mxCell id="ob7-s" parent="g-ob7" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="season : Season&#xa;id = 2026-1&#xa;name = 2026年第1シーズン&#xa;updated = 更新済み" vertex="1">
+          <mxGeometry height="160" width="280" x="60" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ob7-ra" parent="g-ob7" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating P010 / エルフ&#xa;1860 → 1750&#xa;grade = ULTIMATE" vertex="1">
+          <mxGeometry height="130" width="280" x="500" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ob7-rb" parent="g-ob7" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="rating P012 / エルフ&#xa;1640 → 1600&#xa;grade = なし" vertex="1">
+          <mxGeometry height="130" width="280" x="900" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ob7-n9" parent="g-ob7" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="1850以上は 1750。&#xa;1600〜1749 は 1600。消さない" vertex="1">
+          <mxGeometry height="110" width="400" x="500" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ob7-n10" parent="g-ob7" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="このシーズンは更新済み。&#xa;もう一度寄せることはできない" vertex="1">
+          <mxGeometry height="110" width="400" x="1020" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob7-sra" edge="1" parent="g-ob7" source="ob7-s" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.35;entryX=0;entryY=0.5;" target="ob7-ra" value="寄せる（作用）">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob7-srb" edge="1" parent="g-ob7" source="ob7-s" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=1;exitY=0.7;entryX=0;entryY=0.5;" target="ob7-rb" value="寄せる（作用）">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob7-n9" edge="1" parent="g-ob7" source="ob7-ra" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="ob7-n9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ob7-n10" edge="1" parent="g-ob7" source="ob7-s" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=1;entryX=0.3;entryY=0;" target="ob7-n10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c-ob7" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="420" width="720" x="2200" y="6522" as="geometry" />
+        </mxCell>
+        <mxCell id="d-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=18;" value="ドメインモデル図" vertex="1">
+          <mxGeometry height="32" width="320" x="80" y="7082" as="geometry" />
+        </mxCell>
+        <mxCell id="d-g" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;fillColor=#ffffff;strokeColor=#6c8ebf;" value="実装 src/domain が正。Companion の純粋関数。プレイヤーはアクターで、モデルには PlayerId だけ置く。" vertex="1">
+          <mxGeometry height="1560" width="2040" x="80" y="7132" as="geometry" />
+        </mxCell>
+        <mxCell id="d-fr" parent="d-g" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=center;fontStyle=1;spacingTop=8;container=0;dropTarget=0;" value="レーティング集約" vertex="1">
+          <mxGeometry height="380" width="340" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d-fs" parent="d-g" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=center;fontStyle=1;spacingTop=8;container=0;dropTarget=0;" value="シーズン集約" vertex="1">
+          <mxGeometry height="380" width="360" x="400" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d-fh" parent="d-g" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=center;fontStyle=1;spacingTop=8;container=0;dropTarget=0;" value="対戦履歴集約" vertex="1">
+          <mxGeometry height="530" width="360" x="780" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d-fp" parent="d-g" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;verticalAlign=top;align=center;fontStyle=1;spacingTop=8;container=0;dropTarget=0;" value="リポジトリ" vertex="1">
+          <mxGeometry height="280" width="360" x="1180" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d-rating" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Rating  «集約ルート»" vertex="1">
+          <mxGeometry height="150" width="260" x="80" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="d-rating-r1" parent="d-rating" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="playerId : PlayerId" vertex="1">
+          <mxGeometry height="30" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-rating-r2" parent="d-rating" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="craft : Craft" vertex="1">
+          <mxGeometry height="30" width="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-rating-r3" parent="d-rating" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="seasonId : SeasonId" vertex="1">
+          <mxGeometry height="30" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-rating-r4" parent="d-rating" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="value : number" vertex="1">
+          <mxGeometry height="30" width="260" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d-nr" parent="d-g" style="shape=note;whiteSpace=wrap;html=1;align=left;spacingLeft=10;size=16;fillColor=#ffe6cc;strokeColor=#d79b00;" value="識別子は playerId + craft + seasonId。&#xa;Rating.start だけが生成。再開始は拒否。&#xa;grade / rank は属性に持たない。" vertex="1">
+          <mxGeometry height="130" width="260" x="80" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="d-season" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Season  «集約ルート»" vertex="1">
+          <mxGeometry height="120" width="280" x="440" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="d-season-r1" parent="d-season" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="kind : Pending / Updated" vertex="1">
+          <mxGeometry height="30" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-season-r2" parent="d-season" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="id : SeasonId" vertex="1">
+          <mxGeometry height="30" width="280" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-season-r3" parent="d-season" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="name : string" vertex="1">
+          <mxGeometry height="30" width="280" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-ns" parent="d-g" style="shape=note;whiteSpace=wrap;html=1;align=left;spacingLeft=10;size=16;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Rating / Match は持たない。参照は seasonId。&#xa;寄せは旧を残し、次シーズンを作る。&#xa;Pending だけ開始・集計・complete できる。" vertex="1">
+          <mxGeometry height="140" width="280" x="440" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="d-history" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="MatchHistory  «集約ルート»" vertex="1">
+          <mxGeometry height="60" width="260" x="830" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="d-history-r1" parent="d-history" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="matches : Recorded[]" vertex="1">
+          <mxGeometry height="30" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-match" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Match" vertex="1">
+          <mxGeometry height="210" width="260" x="830" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="d-match-r1" parent="d-match" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="kind : Unrecorded / Recorded" vertex="1">
+          <mxGeometry height="30" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-match-r2" parent="d-match" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="id : MatchId" vertex="1">
+          <mxGeometry height="30" width="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-match-r3" parent="d-match" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="seasonId : SeasonId" vertex="1">
+          <mxGeometry height="30" width="260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-match-r4" parent="d-match" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="craft : Craft" vertex="1">
+          <mxGeometry height="30" width="260" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d-match-r5" parent="d-match" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="winnerId : PlayerId" vertex="1">
+          <mxGeometry height="30" width="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="d-match-r6" parent="d-match" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="loserId : PlayerId" vertex="1">
+          <mxGeometry height="30" width="260" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="d-nh" parent="d-g" style="shape=note;whiteSpace=wrap;html=1;align=left;spacingLeft=10;size=16;fillColor=#ffe6cc;strokeColor=#d79b00;" value="履歴は1本。seasonId で絞る。&#xa;同じ MatchId はグローバルに一度だけ。&#xa;勝者 = 敗者は WinnerEqualsLoser。" vertex="1">
+          <mxGeometry height="110" width="260" x="830" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="d-repo" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="永続化のみ" vertex="1">
+          <mxGeometry height="150" width="280" x="1220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="d-repo-r1" parent="d-repo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="RatingRepository" vertex="1">
+          <mxGeometry height="30" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-repo-r2" parent="d-repo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="MatchHistoryRepository" vertex="1">
+          <mxGeometry height="30" width="280" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-repo-r3" parent="d-repo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="SeasonRepository" vertex="1">
+          <mxGeometry height="30" width="280" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-repo-r4" parent="d-repo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="insert / find* / update" vertex="1">
+          <mxGeometry height="30" width="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d-legend" parent="d-g" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=12;spacingTop=8;fillColor=#f5f5f5;strokeColor=#666666;" value="凡例&#xa;枠 = 同時に整合を保つ集約&#xa;«集約ルート» = 集約の入り口&#xa;◆ 実線 = 所有（内部）&#xa;点線 = 作用・導出・参照" vertex="1">
+          <mxGeometry height="160" width="360" x="1180" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="d-craft" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Craft  «区分»" vertex="1">
+          <mxGeometry height="240" width="220" x="80" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d-craft-r1" parent="d-craft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="Elf" vertex="1">
+          <mxGeometry height="30" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-craft-r2" parent="d-craft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="Royal" vertex="1">
+          <mxGeometry height="30" width="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-craft-r3" parent="d-craft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="Witch" vertex="1">
+          <mxGeometry height="30" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-craft-r4" parent="d-craft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="Dragon" vertex="1">
+          <mxGeometry height="30" width="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d-craft-r5" parent="d-craft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="Nightmare" vertex="1">
+          <mxGeometry height="30" width="220" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="d-craft-r6" parent="d-craft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="Bishop" vertex="1">
+          <mxGeometry height="30" width="220" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="d-craft-r7" parent="d-craft" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="Nemesis" vertex="1">
+          <mxGeometry height="30" width="220" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="d-grade" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Grade  «区分»" vertex="1">
+          <mxGeometry height="180" width="220" x="340" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d-grade-r1" parent="d-grade" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="None" vertex="1">
+          <mxGeometry height="30" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-grade-r2" parent="d-grade" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="EPIC" vertex="1">
+          <mxGeometry height="30" width="220" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-grade-r3" parent="d-grade" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="ULTIMATE" vertex="1">
+          <mxGeometry height="30" width="220" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-grade-r4" parent="d-grade" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="LEGEND" vertex="1">
+          <mxGeometry height="30" width="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d-grade-r5" parent="d-grade" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="BEYOND" vertex="1">
+          <mxGeometry height="30" width="220" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="d-pid" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="PlayerId  «値»" vertex="1">
+          <mxGeometry height="60" width="220" x="600" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d-pid-r1" parent="d-pid" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="of() だけが入口" vertex="1">
+          <mxGeometry height="30" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-ranked" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="RankedRating  «導出»" vertex="1">
+          <mxGeometry height="120" width="280" x="860" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="d-ranked-r1" parent="d-ranked" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="rating : Rating" vertex="1">
+          <mxGeometry height="30" width="280" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-ranked-r2" parent="d-ranked" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="rank : number" vertex="1">
+          <mxGeometry height="30" width="280" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-ranked-r3" parent="d-ranked" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" value="grade : Grade" vertex="1">
+          <mxGeometry height="30" width="280" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-nrank" parent="d-g" style="shape=note;whiteSpace=wrap;html=1;align=left;spacingLeft=10;size=16;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Rating.rank が同じ Craft を value 順に並べる。永続化しない。" vertex="1">
+          <mxGeometry height="80" width="280" x="860" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-sr" edge="1" parent="d-g" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" source="d-season" target="d-rating" value="seasonId 参照 / compress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-hm" edge="1" parent="d-g" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;startArrow=diamondThin;startFill=1;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" source="d-history" target="d-match" value="Recorded だけ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-sm" edge="1" parent="d-g" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;dashed=1;exitX=1;exitY=0.65;entryX=0;entryY=0.25;" source="d-season" target="d-match" value="seasonId 参照">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-rc" edge="1" parent="d-g" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;endArrow=open;endFill=0;exitX=0.3;exitY=1;entryX=0.5;entryY=0;" source="d-rating" target="d-craft">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-rg" edge="1" parent="d-g" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;endArrow=open;endFill=0;dashed=1;exitX=0.7;exitY=1;entryX=0.5;entryY=0;" source="d-rating" target="d-grade" value="導出">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-rp" edge="1" parent="d-g" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;exitX=1;exitY=0.35;entryX=0;entryY=0.35;" source="d-rating" target="d-pid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-mc" edge="1" parent="d-g" style="edgeStyle=entityRelationEdgeStyle;rounded=1;html=1;endArrow=open;endFill=0;exitX=0;exitY=0.45;entryX=1;entryY=0.2;" source="d-match" target="d-craft">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-mp" edge="1" parent="d-g" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;endArrow=open;endFill=0;exitX=0;exitY=0.75;entryX=1;entryY=0.5;" source="d-match" target="d-pid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-e-rr" edge="1" parent="d-g" style="edgeStyle=orthogonalEdgeStyle;curved=1;html=1;endArrow=open;endFill=0;dashed=1;exitX=1;exitY=1;entryX=0.5;entryY=0;" source="d-rating" target="d-ranked" value="rank()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tg" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="肩書きの導出  Grade.of / ofRanked" vertex="1">
+          <mxGeometry height="240" width="700" x="80" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tg-r1" parent="d-tg" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1649以下 → None" vertex="1">
+          <mxGeometry height="30" width="700" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tg-r2" parent="d-tg" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1650〜1749 → EPIC" vertex="1">
+          <mxGeometry height="30" width="700" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tg-r3" parent="d-tg" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1750〜1849 → ULTIMATE" vertex="1">
+          <mxGeometry height="30" width="700" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tg-r4" parent="d-tg" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1850以上 → LEGEND" vertex="1">
+          <mxGeometry height="30" width="700" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tg-r5" parent="d-tg" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1850以上 かつ 1〜100位 → BEYOND" vertex="1">
+          <mxGeometry height="30" width="700" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tg-r6" parent="d-tg" style="text;html=1;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;fontSize=11;" value="BEYOND は Grade.ofRanked だけ。of は LEGEND まで" vertex="1">
+          <mxGeometry height="30" width="700" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tg-r7" parent="d-tg" style="text;html=1;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;fontSize=11;" value="rank は属性に持たない。参照時に Rating.rank" vertex="1">
+          <mxGeometry height="30" width="700" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc" parent="d-g" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="シーズン寄せ  Season.compress" vertex="1">
+          <mxGeometry height="270" width="700" x="820" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc-r1" parent="d-tc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1850以上 → 1750" vertex="1">
+          <mxGeometry height="30" width="700" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc-r2" parent="d-tc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1750〜1849 → 1650" vertex="1">
+          <mxGeometry height="30" width="700" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc-r3" parent="d-tc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1600〜1749 → 1600" vertex="1">
+          <mxGeometry height="30" width="700" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc-r4" parent="d-tc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1550〜1599 → 1550" vertex="1">
+          <mxGeometry height="30" width="700" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc-r5" parent="d-tc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1520〜1549 → 1520" vertex="1">
+          <mxGeometry height="30" width="700" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc-r6" parent="d-tc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1480〜1519 → 1500" vertex="1">
+          <mxGeometry height="30" width="700" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc-r7" parent="d-tc" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;" value="1479以下 → そのまま" vertex="1">
+          <mxGeometry height="30" width="700" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="d-tc-r8" parent="d-tc" style="text;html=1;strokeColor=none;fillColor=#ffe6cc;align=left;verticalAlign=middle;spacingLeft=10;overflow=hidden;rotatable=0;fontSize=11;" value="旧は残す。次シーズンの Rating を1件返す。一括はユースケース" vertex="1">
+          <mxGeometry height="30" width="700" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="d-rules" parent="d-g" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=14;spacingTop=12;fillColor=#fff2cc;strokeColor=#d6b656;" value="ルールと責務&#xa;&#xa;R1 レートはクラスごと → Rating（識別子が playerId + craft + seasonId）&#xa;R2 未開始にはレートがない → Rating.start だけが生成。再開始は AlreadyStarted&#xa;R3 同じ対局は一度だけ → MatchHistory.record。MatchId はグローバル&#xa;R4 両者を同時に更新 → recordMatchUseCase が Rating.apply 2つと MatchHistory.record を一つの手続きで呼ぶ&#xa;R5 肩書き。BEYONDは上位100 → Grade.of / Grade.ofRanked / Rating.rank。順位はシーズン内&#xa;R6 シーズンは寄せる → 旧 Rating は残す。Season.compress が次シーズンの Rating を作る&#xa;&#xa;勝者≠敗者 → Match.create（WinnerEqualsLoser）&#xa;開始値1600 → Rating.start の戻り値だけが 1600&#xa;開始と集計は Pending のシーズンだけ" vertex="1">
+          <mxGeometry height="280" width="1440" x="80" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="d-c" parent="1" style="swimlane;fontStyle=1;startSize=30;horizontal=1;collapsible=0;dashed=1;fillColor=#fafafa;strokeColor=#999999;fontColor=#999999;" value="コメント" vertex="1">
+          <mxGeometry height="1560" width="720" x="2200" y="7132" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
