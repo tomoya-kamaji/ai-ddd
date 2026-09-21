@@ -23,6 +23,11 @@ export type Updated = Readonly<{
 
 export type Season = Pending | Updated;
 
+export type SeasonNotPending = Readonly<{
+  kind: "SeasonNotPending";
+  seasonId: SeasonId;
+}>;
+
 export type CompleteSeasonError = Readonly<{
   kind: "AlreadyUpdated";
   seasonId: SeasonId;
@@ -44,6 +49,13 @@ export const Season = {
     id,
     name,
   }),
+
+  requirePending: (
+    season: Season,
+  ): Result<Pending, SeasonNotPending> =>
+    season.kind === "Pending"
+      ? ok(season)
+      : err({ kind: "SeasonNotPending", seasonId: season.id }),
 
   // R6: 引数型が Pending なので Updated を渡すとコンパイルエラー
   markUpdated: (season: Pending): Updated => ({

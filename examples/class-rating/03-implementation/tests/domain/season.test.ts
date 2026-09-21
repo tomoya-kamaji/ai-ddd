@@ -64,6 +64,22 @@ describe("Season.markUpdated", () => {
   });
 });
 
+describe("Season.requirePending", () => {
+  it("未更新ならPendingとして返す", () => {
+    expect(Season.requirePending(pendingSeason)._unsafeUnwrap()).toEqual(
+      pendingSeason,
+    );
+  });
+
+  it("更新済みなら拒否する", () => {
+    const updated = Season.markUpdated(pendingSeason);
+    expect(Season.requirePending(updated)._unsafeUnwrapErr()).toEqual({
+      kind: "SeasonNotPending",
+      seasonId: season2026,
+    });
+  });
+});
+
 describe("Season.complete", () => {
   it("更新済みなら拒否する", () => {
     const updated = Season.markUpdated(Season.create(season2026, seasonName2026));

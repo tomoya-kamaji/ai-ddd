@@ -3,12 +3,14 @@ import type { Craft } from "../domain/rating/craft";
 import type { PlayerId } from "../domain/rating/player";
 import { Rating } from "../domain/rating/rating";
 import type { RatingRepository } from "../domain/rating/rating-repository";
-import type { SeasonId } from "../domain/season/season";
+import type {
+  SeasonId,
+  SeasonNotPending,
+} from "../domain/season/season";
 import type { SeasonRepository } from "../domain/season/season-repository";
 import {
   requirePendingSeason,
   type SeasonNotFound,
-  type SeasonNotPending,
 } from "./require-pending-season";
 
 type Deps = Readonly<{

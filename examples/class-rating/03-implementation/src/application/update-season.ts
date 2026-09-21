@@ -5,13 +5,13 @@ import {
   Season,
   type CompleteSeasonError,
   type SeasonId,
+  type SeasonNotPending,
   type Updated,
 } from "../domain/season/season";
 import type { SeasonRepository } from "../domain/season/season-repository";
 import {
   requirePendingSeason,
   type SeasonNotFound,
-  type SeasonNotPending,
 } from "./require-pending-season";
 
 type Deps = Readonly<{
